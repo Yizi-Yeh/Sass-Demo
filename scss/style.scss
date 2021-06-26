@@ -1,0 +1,104 @@
+// 顏色定義
+$color_orange: #ff6e3a;
+$color_brown: #e6af2e;
+$color_yellow: #f5d061;
+$color_white: #ececec;
+
+$heading-font-xxs: 0.5rem;
+$heading-font-xs: 1rem;
+$heading-font-sm: 1.6rem;
+$heading-font-md: 2rem;
+$heading-font-lg: 2.2rem;
+$heading-font-xl: 3rem;
+$heading-font-xxl: 4rem;
+
+$text-font-xs: 0.8125rem;
+$text-font-sm: 0.9375rem;
+$text-font-md: 1rem;
+$text-font-lg: 1.2rem;
+
+$line-height-sm: 1.4;
+$line-height-md: 1.6;
+$line-height-lg: 2;
+
+$letter-spacing-xs: 0.5px;
+$letter-spacing-sm: 1px;
+$letter-spacing-md: 5px;
+$letter-spacing-lg: 10px;
+
+// 字型
+* {
+  font-family: "Oswald", "微軟正黑體";
+}
+// debug
+// header,
+// section {
+//   display: none !important;
+// }
+// #section-contact {
+//   display: block !important;
+// }
+@mixin ab_center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+body {
+  height: 1000px;
+}
+
+header.jumbotron {
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1621570359764-f297bc0d471b?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80);
+
+  /* 左右撐滿ˇ */
+  background-size: cover;
+  // 固定在螢幕上特定位置
+  background-attachment: fixed;
+  margin-bottom: 0px;
+  .container {
+    color: white;
+    // 上下 左又
+    padding: 250px 0px;
+  }
+  hr {
+    max-width: 50px;
+    border: solid 2px $color_orange;
+  }
+  h4 {
+    color: rgba(white, 0.5);
+  }
+}
+
+section {
+  padding: 50px 0px;
+}
+
+section#section_ask {
+  background-color: $color_orange;
+  .col-sm-5.img {
+    background-image: url(https://wowlavie-aws.hmgcdn.com/file/article_all/A1449462960.jpg);
+    height: 350px;
+    mix-blend-mode: multiply;
+  }
+  h2 {
+    margin-top: 130px;
+    padding: 0px 20px;
+  }
+}
+
+section#section_about {
+  img {
+    width: 120%;
+  }
+  &-wrap {
+    height: 220px;
+    overflow: hidden;
+  }
+}
