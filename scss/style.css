@@ -7,47 +7,104 @@ body {
   height: 1000px;
 }
 
+section {
+  padding: 50px 0px;
+}
+
 header.jumbotron {
   text-align: center;
-  background-image: url(https://images.unsplash.com/photo-1621570359764-f297bc0d471b?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80);
-  /* 左右撐滿ˇ */
+  background-image: url(https://i.ytimg.com/vi/KTZ-y85Erus/maxresdefault.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
 }
 header.jumbotron .container {
-  color: white;
-  padding: 250px 0px;
+  color: #ffffff;
+  padding: 280px 0px;
 }
 header.jumbotron hr {
   max-width: 50px;
-  border: solid 2px #ff6e3a;
+  border: solid 2px #ffffff;
 }
-header.jumbotron h4 {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-section {
-  padding: 50px 0px;
+header.jumbotron h4,
+header.jumbotron h1 {
+  color: #ffffff;
 }
 
 section#section_ask {
-  background-color: #ff6e3a;
+  background-color: #d4e0e0;
 }
 section#section_ask .col-sm-5.img {
-  background-image: url(https://wowlavie-aws.hmgcdn.com/file/article_all/A1449462960.jpg);
+  background-image: url(https://pbs.twimg.com/profile_images/1268087938232905728/402eMdna_400x400.jpg);
   height: 350px;
   mix-blend-mode: multiply;
+}
+section#section_ask .col-sm-7 {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 80px;
+  font-size: 1.5rem;
+  line-height: 2;
+  font-weight: lighter;
 }
 section#section_ask h2 {
   margin-top: 130px;
   padding: 0px 20px;
 }
 
+section#section_about {
+  text-align: center;
+}
 section#section_about img {
-  width: 120%;
+  width: 100%;
 }
 section#section_about-wrap {
   height: 220px;
   overflow: hidden;
+}
+
+section#section_story {
+  padding: 0;
+  color: #d4e0e0;
+}
+section#section_story .col-sm-5 {
+  background-image: url(https://i.ytimg.com/vi/AGkuj9uQuHo/maxresdefault.jpg);
+  background-size: 100% auto;
+  height: 400px;
+}
+section#section_story .col-sm-7 {
+  text-align: center;
+}
+section#section_story .col-sm-7 i {
+  font-size: 40px;
+}
+section#section_story .col-sm-12.feature {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+footer.jumbotron {
+  text-align: center;
+  background-image: url(https://i.ytimg.com/vi/KTZ-y85Erus/maxresdefault.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+}
+footer.jumbotron input {
+  background-color: transparent;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer.jumbotron .container {
+  color: #ffffff;
+  padding: 60px 0px;
+}
+footer.jumbotron hr {
+  max-width: 50px;
+  border: solid 2px #ffffff;
+}
+footer.jumbotron h4,
+footer.jumbotron h1 {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

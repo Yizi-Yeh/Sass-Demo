@@ -2,7 +2,8 @@
 $color_orange: #ff6e3a;
 $color_brown: #e6af2e;
 $color_yellow: #f5d061;
-$color_white: #ececec;
+$color_white: #ffffff;
+$color_blue: #d4e0e0;
 
 $heading-font-xxs: 0.5rem;
 $heading-font-xs: 1rem;
@@ -15,7 +16,7 @@ $heading-font-xxl: 4rem;
 $text-font-xs: 0.8125rem;
 $text-font-sm: 0.9375rem;
 $text-font-md: 1rem;
-$text-font-lg: 1.2rem;
+$text-font-lg: 1.5rem;
 
 $line-height-sm: 1.4;
 $line-height-md: 1.6;
@@ -26,18 +27,10 @@ $letter-spacing-sm: 1px;
 $letter-spacing-md: 5px;
 $letter-spacing-lg: 10px;
 
-// 字型
 * {
   font-family: "Oswald", "微軟正黑體";
 }
-// debug
-// header,
-// section {
-//   display: none !important;
-// }
-// #section-contact {
-//   display: block !important;
-// }
+
 @mixin ab_center {
   position: absolute;
   left: 50%;
@@ -53,39 +46,46 @@ body {
   height: 1000px;
 }
 
-header.jumbotron {
-  text-align: center;
-  background-image: url(https://images.unsplash.com/photo-1621570359764-f297bc0d471b?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80);
-
-  /* 左右撐滿ˇ */
-  background-size: cover;
-  // 固定在螢幕上特定位置
-  background-attachment: fixed;
-  margin-bottom: 0px;
-  .container {
-    color: white;
-    // 上下 左又
-    padding: 250px 0px;
-  }
-  hr {
-    max-width: 50px;
-    border: solid 2px $color_orange;
-  }
-  h4 {
-    color: rgba(white, 0.5);
-  }
-}
-
 section {
   padding: 50px 0px;
 }
 
+header.jumbotron {
+  text-align: center;
+  background-image: url(https://i.ytimg.com/vi/KTZ-y85Erus/maxresdefault.jpg);
+
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+
+  .container {
+    color: $color_white;
+    padding: 280px 0px;
+  }
+  hr {
+    max-width: 50px;
+    border: solid 2px $color_white;
+  }
+  h4,
+  h1 {
+    color: $color_white;
+  }
+}
+
 section#section_ask {
-  background-color: $color_orange;
+  background-color: $color_blue;
   .col-sm-5.img {
-    background-image: url(https://wowlavie-aws.hmgcdn.com/file/article_all/A1449462960.jpg);
+    background-image: url(https://pbs.twimg.com/profile_images/1268087938232905728/402eMdna_400x400.jpg);
     height: 350px;
     mix-blend-mode: multiply;
+  }
+  .col-sm-7 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    font-size: $text-font-lg;
+    line-height: $line-height-lg;
+    font-weight: lighter;
   }
   h2 {
     margin-top: 130px;
@@ -94,11 +94,62 @@ section#section_ask {
 }
 
 section#section_about {
+  text-align: center;
   img {
-    width: 120%;
+    width: 100%;
   }
   &-wrap {
+    // 使用固定高調整img大小
+    // 再把多餘地方裁掉
     height: 220px;
     overflow: hidden;
+  }
+}
+
+section#section_story {
+  padding: 0;
+  color: $color_blue;
+  .col-sm-5 {
+    background-image: url(https://i.ytimg.com/vi/AGkuj9uQuHo/maxresdefault.jpg);
+    background-size: 100% auto;
+    height: 400px;
+  }
+  .col-sm-7 {
+    text-align: center;
+    i {
+      font-size: 40px;
+    }
+  }
+  .col-sm-12.feature {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+footer.jumbotron {
+  text-align: center;
+  background-image: url(https://i.ytimg.com/vi/KTZ-y85Erus/maxresdefault.jpg);
+
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+  input {
+    background-color: transparent;
+    max-width: 350px;
+    // 左右距離auto就會變置中
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container {
+    color: $color_white;
+    padding: 60px 0px;
+  }
+  hr {
+    max-width: 50px;
+    border: solid 2px $color_white;
+  }
+  h4,
+  h1 {
+    color: $color_white;
   }
 }
